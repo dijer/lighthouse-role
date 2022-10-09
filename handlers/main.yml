@@ -1,0 +1,8 @@
+---
+# handlers file for lighthouse
+  - name: Start nginx
+    become: true
+    command: nginx
+  - name: Reload nginx
+    become: true
+    command: nginx -s reload
